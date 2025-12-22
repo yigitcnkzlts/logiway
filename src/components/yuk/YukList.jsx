@@ -5,9 +5,7 @@ export default function YukList({ items, favoriteIds = [], onToggleFavorite, onC
     return (
       <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 text-slate-200">
         <p className="font-semibold">Kayıt bulunamadı.</p>
-        <p className="mt-1 text-sm text-slate-400">
-          Filtreleri temizleyip tekrar deneyebilirsin.
-        </p>
+
         <button
           type="button"
           onClick={onClearFilters}
