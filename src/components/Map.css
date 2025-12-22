@@ -1,0 +1,47 @@
+.map-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-box {
+  width: 300px;
+  height: 220px;
+  background: #0f172a;
+  border-radius: 14px;
+  position: relative;
+  border: 1px solid #475569;
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.35);
+  overflow: hidden;
+}
+
+/* Rota çizgisi */
+.map-line {
+  position: absolute;
+  width: 300px;
+  height: 220px;
+  pointer-events: none;
+}
+
+/* Marker'lar */
+.marker {
+  position: absolute;
+  font-size: 22px;
+  transform: translate(-50%, -50%);
+}
+
+.marker.truck {
+  filter: drop-shadow(0 0 6px #22c55e);
+}
+
+.marker.load {
+  filter: drop-shadow(0 0 6px #38bdf8);
+}
+
+/* Yazı */
+.map-label {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #94a3b8;
+}

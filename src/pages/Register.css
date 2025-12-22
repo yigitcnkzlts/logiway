@@ -1,0 +1,269 @@
+/* === GENEL ARKA PLAN (Login ile aynı) === */
+.register-wrapper {
+  min-height: 100vh;
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+  background:
+    radial-gradient(circle at top left, rgba(37,99,235,0.45), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(34,197,94,0.45), transparent 55%),
+    #020617;
+  color: #e5e7eb;
+  position: relative;
+  overflow: hidden;
+}
+
+.register-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 40%, rgba(56,189,248,0.18) 50%, transparent 60%);
+  opacity: .45;
+}
+
+.register-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(59,130,246,.28), transparent 60%),
+    radial-gradient(circle at 80% 20%, rgba(34,197,94,.28), transparent 60%);
+  filter: blur(13px);
+  opacity: .8;
+}
+
+.register-wrapper > * { position: relative; z-index: 2; }
+
+/* === SOL PANEL === */
+.register-info {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.logo-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: radial-gradient(circle,#22c55e,#0f766e);
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-weight:700;
+  box-shadow:0 0 16px rgba(34,197,94,.8);
+}
+
+.brand-name { font-size: 22px; font-weight: 700; }
+.brand-slogan { font-size: 13px; color:#94a3b8; }
+
+.info-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.info-subtitle {
+  color:#cbd5e1;
+  max-width: 520px;
+  margin-bottom: 14px;
+}
+
+.info-flags {
+  margin-top: 16px;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+/* === SAĞ PANEL (FORM KARTI) === */
+.register-panel {
+  flex: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-card {
+  width:100%;
+  max-width:380px;
+  padding:26px;
+  background: rgba(15,23,42,.92);
+  border-radius:18px;
+  backdrop-filter:blur(16px);
+  border:1px solid rgba(148,163,184,.5);
+  box-shadow:0 0 20px rgba(56,189,248,.3);
+
+  /* ✅ taşma olmasın */
+  box-sizing: border-box;
+}
+
+/* === SOSYAL === */
+.social-group {
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-bottom:16px;
+}
+
+.social-btn {
+  padding:10px;
+  border:none;
+  color:white;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  cursor:pointer;
+}
+
+.social-btn.google { background:#dc2626; }
+.social-btn.facebook { background:#1d4ed8; }
+
+.icon-img {
+  width:18px;
+  height:18px;
+}
+
+/* Ripple */
+.ripple { position:relative; overflow:hidden; }
+.ripple:active::after {
+  content:"";
+  position:absolute;
+  width:180px; height:180px;
+  background:rgba(255,255,255,.3);
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  border-radius:999px;
+  opacity:0.4;
+}
+
+/* AYRAÇ */
+.divider {
+  text-align:center;
+  margin:10px 0;
+  color:#9ca3af;
+  font-size:11px;
+}
+
+/* === FORM === */
+.form-area {
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.field span {
+  font-size:13px;
+  color:#cbd5e1;
+}
+
+.input {
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #475569;
+  background:rgba(15,23,42,.94);
+  color:white;
+
+  /* ✅ input taşmasın */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.glow-input:focus {
+  outline:none;
+  border-color:#38bdf8;
+  box-shadow:0 0 12px rgba(56,189,248,.5);
+}
+
+/* İki kolon */
+.two-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap: 3px;
+}
+
+/* Profil seçim */
+.profile-buttons {
+  display:flex;
+  gap:10px;
+}
+
+.profile-btn {
+  flex:1;
+  padding:10px;
+  background:rgba(15,23,42,.85);
+  border:1px solid #475569;
+  color:white;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:13px;
+  transition:.2s;
+}
+
+.profile-btn.active {
+  border-color:#38bdf8;
+  box-shadow:0 0 14px rgba(56,189,248,.5);
+}
+
+/* Checkbox */
+.terms {
+  font-size:12px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+/* Button */
+.submit-btn {
+  padding:11px;
+  border-radius:11px;
+  border:none;
+  color:white;
+  font-weight:600;
+  background:linear-gradient(135deg,#2563eb,#1e40af);
+  cursor:pointer;
+}
+
+.submit-btn:hover {
+  transform:translateY(-1px);
+}
+
+/* Alt link */
+.bottom-text {
+  text-align:center;
+  margin-top:10px;
+  color:#9ca3af;
+}
+
+.bottom-link {
+  color:#60a5fa;
+  text-decoration:none;
+}
+
+
+@media (max-width: 560px) {
+  .register-wrapper {
+    padding: 20px;
+    gap: 20px;
+  }
+
+ 
+  .two-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .register-card {
+    padding: 20px;
+    max-width: 100%;
+  }
+}

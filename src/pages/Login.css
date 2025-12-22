@@ -1,0 +1,138 @@
+/* Container */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111827; /* bg-gray-900 */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Card */
+.login-card {
+  width: 100%;
+  max-width: 28rem; /* max-w-md */
+  background-color: #1f2933; /* bg-gray-800 */
+  padding: 2rem; /* p-8 */
+  border-radius: 1rem; /* rounded-2xl */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* shadow-lg */
+  border: 1px solid #374151; /* border-gray-700 */
+}
+
+/* Title */
+.login-title {
+  text-align: center;
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* gap-4 */
+}
+
+.login-input {
+  padding: 0.75rem; /* p-3 */
+  border-radius: 0.5rem; /* rounded-lg */
+  background-color: #374151; /* bg-gray-700 */
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+.login-input::placeholder {
+  color: #d1d5db; /* placeholder-gray-300 */
+}
+
+.login-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6; /* ring-blue-500 */
+}
+
+/* Login button */
+.login-btn {
+  padding: 0.75rem;
+  background-color: #2563eb; /* bg-blue-600 */
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #1d4ed8; /* hover:bg-blue-700 */
+}
+
+/* Social buttons */
+.social-box {
+  margin-top: 1.5rem; /* mt-6 */
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.google-btn {
+  padding: 0.75rem;
+  background-color: #dc2626; /* red-600 */
+  color: #ffffff;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.google-btn:hover {
+  background-color: #b91c1c; /* red-700 */
+}
+
+.facebook-btn {
+  padding: 0.75rem;
+  background-color: #1d4ed8; /* blue-700 */
+  color: #ffffff;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.facebook-btn:hover {
+  background-color: #1e40af; /* blue-800 */
+}
+
+.mail-btn {
+  padding: 0.75rem;
+  background-color: #374151; /* gray-700 */
+  color: #ffffff;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.mail-btn:hover {
+  background-color: #4b5563; /* gray-600 */
+}
+
+/* Register link */
+.login-desc {
+  text-align: center;
+  color: #d1d5db; /* gray-300 */
+  margin-top: 1rem;
+}
+
+.login-link {
+  color: #60a5fa; /* blue-400 */
+  margin-left: 0.25rem;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
